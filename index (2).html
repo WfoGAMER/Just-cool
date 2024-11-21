@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+
+  
+
+<html id = "demo">
+
+
+  <head>     
+<style>  .button {
+  background-color: #04AA6D; /* red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}</style>
+  
+</head>
+<body>
+  
+<button id = "my" onclick = "MyFunction()">Click To Launch</button>
+  <br>
+<button id = "me" onclick = "replica()">Click For Replica</button>
+
+<script>
+  function MyFunction() {
+        var urlobj = new window.URL(window.location.href);
+        let url = prompt("Please enter the url", "index.html");
+
+  
+if(t){
+  t.focus();
+     }else {
+let t = window.open(); 
+
+
+    
+      var iframe = t.document.createElement('iframe'); 
+  document.querySelector('button').style.background='#ff5148'; 
+ document.getElementById("my").innerHTML="Launched";
+    
+iframe.src =  prompt("Please enter url", "index.html");
+      
+  }
+  function replica(){
+
+t.document.body.innerHTML=document.body.innerHTML;
+  }
+  }
+</script>
+   
+   
+  
+</body>
+</html>
